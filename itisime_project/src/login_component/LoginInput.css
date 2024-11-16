@@ -1,0 +1,17 @@
+.LoginInput {
+    width: 464px;
+    height: 75px;
+    border-radius: 15px;
+    background: #fff;
+    position: absolute;
+    font-size: 32px;
+    font-weight: bold;
+    color: #697565;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.5s;
+}
+
+.LoginInput:focus {
+    background-color: #e1d7c8;
+}

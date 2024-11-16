@@ -1,0 +1,10 @@
+.MainPageList {
+    position: absolute;
+    top: 532px;
+    left: 429px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: flex-start;
+    padding: 23px 17px 0 17px;
+}

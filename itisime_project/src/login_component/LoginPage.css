@@ -1,0 +1,49 @@
+.LoginPage {
+    position: relative;
+}
+
+.pageIndexCircle {
+    position: absolute;
+    top: 15px;
+}
+
+.loginTitle {
+    color: #fff;
+    font-size: 60px;
+    line-height: normal;
+    letter-spacing: 30px;
+    position: absolute;
+    left: 533px;
+    top: 270px;
+    transition: color 0.5s;
+}
+
+.loginTitle:hover {
+    color: #697565
+}
+
+.btnLogin {
+    position: absolute;
+    width: 240px;
+    height: 62px;
+    border-radius: 48px;
+    background: #D9D9D9;
+    text-align: center;
+    left: 600px;
+    top: 561px;
+    line-height: 62px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btnLogin:hover {
+    background-color: #3c3d37;
+}
+
+.activatedPage {
+    fill: #697565;
+}

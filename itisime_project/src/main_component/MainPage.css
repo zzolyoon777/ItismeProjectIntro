@@ -1,0 +1,102 @@
+.profileImg {
+    position: absolute;
+    width: 292px;
+    height: 292px;
+    border-radius: 292px;
+    content: url('../images/profile.jpg');
+    object-fit: cover;
+    box-sizing: border-box;
+    top: 65px;
+    left: 574px;
+    animation: hoverProfileImg 1.5s infinite ease, beginOpacityAnime 1s ease forwards;
+}
+
+.introOneDetail {
+    color: #fff;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    top: 372px;
+    left: 564px;
+    position: absolute;
+    animation: beginOpacityAnime 1s ease forwards;
+}
+
+.divider {
+    position: absolute;
+    left: 18.5px;
+    top: 527px;
+    animation: beginOpacityAnime 1s ease forwards;
+}
+
+.wall1 {
+    left: 21.5px;
+    top: 546.5px;
+    position: absolute;
+    animation: moveWall1 2s ease forwards;
+}
+
+.wall2 {
+    right: 19px;
+    top: 552px;
+    position: absolute;
+    animation: moveWall2 2s ease forwards;
+}
+
+@keyframes moveWall1 {
+    0% {
+        left: 21.5px;
+        opacity: 1;
+    }
+    100% {
+        left: 429px;
+        height: 139px;
+        opacity: 0;
+    }
+}
+
+@keyframes moveWall2 {
+    0% {
+        right: 19px;
+        opacity: 1;
+    }
+    100% {
+        right: 429px;
+        height: 139px;
+        opacity: 0;
+    }
+}
+
+@keyframes hoverProfileImg {
+    0% {
+        border-radius: 20% 60% 40% 35% / 40% 35% 60% 20%;
+        scale: 1;
+    }
+    25% {
+        border-radius: 45% 55% 35% 60% / 60% 45% 25% 45%;
+    }
+    50% {
+        border-radius: 55% 75% 25% 50% / 50% 25% 40% 45%;
+        scale: 1.02;
+    }
+    75% {
+        border-radius: 85% 55% 25% 45% / 40% 45% 65% 25%;
+    }
+    100% {
+        border-radius: 20% 60% 40% 35% / 40% 35% 60% 20%;
+        scale: 1;
+    }
+}
+
+@keyframes beginOpacityAnime {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
