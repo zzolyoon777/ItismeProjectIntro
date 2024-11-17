@@ -18,10 +18,12 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 900;
-    line-height: normal;
+    line-height: 136px;
+    height: 136px;
     letter-spacing: 4.8px;
     top: 372px;
-    left: 564px;
+    left: 281px;
+    width: 877px;
     position: absolute;
     animation: beginOpacityAnime 1s ease forwards;
 }

@@ -3,8 +3,6 @@ import LoginInput from './LoginInput';
 import './LoginPage.css';
 import { useNavigate } from 'react-router-dom';
 
-const LoginContext = createContext();
-
 const LoginPage = () => {
     const [_, setPageTwo] = useState(false);
 
