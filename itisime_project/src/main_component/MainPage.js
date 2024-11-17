@@ -1,11 +1,11 @@
 import './MainPage.css';
 import MainPageList from './MainPageList';
 
-const MainPage = () => {
+const MainPage = ({ oneDetail }) => {
     return (
         <div className="MainPage">
             <img className="profileImg" />
-            <div className='introOneDetail'>안녕하세요,<br />정조윤입니다.</div>
+            <div className='introOneDetail'>{oneDetail}</div>
             <div className='divider' />
             <svg xmlns="http://www.w3.org/2000/svg" width="1406" height="6" viewBox="0 0 1406 6" fill="none" className='divider'>
                 <path d="M0.5 3H1406" stroke="white" stroke-width="5" />

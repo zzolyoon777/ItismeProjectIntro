@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './EnterUserInfoPage.css';
+import EnterUserInfoItem from './EnterUserInfoItem';
 
 const EnterUserInfoPage = () => {
     const navigate = useNavigate();
@@ -12,10 +13,10 @@ const EnterUserInfoPage = () => {
                 <circle cx="8" cy="8" r="8" fill="#FFFFFF" id='page2' className="activatedPage"/>
             </svg>
             <div className='loginTitle elsie-swash-caps-black' style={{top:'169px', left:'540px'}}>ITISME</div>
-            <input className="inputs inputName elsie-swash-caps-black" placeholder='Name'/>
-            <input className="inputs inputBirth elsie-swash-caps-black" placeholder='2004-12-13'/>
-            <input className='inputs inputOneDetail elsie-swash-caps-black' placeholder='Intro Line 1'/>
-            <textarea className='inputs inputDetails elsie-swash-caps-black' placeholder='Detailed Intro'/>
+            <EnterUserInfoItem className={"inputName"} placeHolder={"Name"} />
+            <EnterUserInfoItem className={"inputBirth"} placeHolder={"2004-12-13"} />
+            <EnterUserInfoItem className={"inputOneDetail"} placeHolder={"Intro Line 1"} />
+            <EnterUserInfoItem className={"inputDetails"} placeHolder={"Detailed Intro"}/>
             <div className='buttonUserInfo elsie-swash-caps-black' onClick={() => {navigate('/main')}}>Enter GoGo</div>
         </div>
     );
