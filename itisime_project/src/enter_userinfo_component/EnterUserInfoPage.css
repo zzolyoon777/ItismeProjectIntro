@@ -1,11 +1,11 @@
 .inputs {
     border-radius: 20px;
-    background: #D9D9D9;
+    background: #FFFFFF;
     position: absolute;
     box-sizing: border-box;
     font-size: 32px;
     padding: 20px;
-    transition: background-color 1s;
+    transition: background-color 0.38s;
 }
 
 .inputName {

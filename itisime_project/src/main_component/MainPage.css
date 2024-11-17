@@ -1,13 +1,13 @@
 .profileImg {
     position: absolute;
-    width: 292px;
-    height: 292px;
+    width: 192px;
+    height: 192px;
     border-radius: 292px;
     content: url('../images/profile.jpg');
     object-fit: cover;
     box-sizing: border-box;
-    top: 65px;
-    left: 574px;
+    top: 156px;
+    left: 624px;
     animation: hoverProfileImg 1.5s infinite ease, beginOpacityAnime 1s ease forwards;
 }
 
