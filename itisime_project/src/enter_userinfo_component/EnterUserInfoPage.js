@@ -1,9 +1,26 @@
 import { useNavigate } from 'react-router-dom';
 import './EnterUserInfoPage.css';
 import EnterUserInfoItem from './EnterUserInfoItem';
+import { useContext, useEffect, useMemo, useState } from 'react';
+import { UserInfoContext } from '../App';
 
 const EnterUserInfoPage = () => {
     const navigate = useNavigate();
+
+    const { userInfo } = useContext(UserInfoContext);
+
+    const isAllInputsAreNotEmpty = useMemo(function onClickIsAllInputsAreNotEmpty() {
+        let cnt = 0;
+        for(let prop in userInfo) {
+            cnt++;
+            if(cnt === 4) return true;
+        };
+        return false;
+    }, [userInfo]);
+
+    console.log(isAllInputsAreNotEmpty);
+
+
     return (
         <div className="EnterUserInfoPage">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" className='pageIndexCircle' style={{left:'693px'}}>
@@ -17,7 +34,7 @@ const EnterUserInfoPage = () => {
             <EnterUserInfoItem className={"inputBirth"} placeHolder={"2004-12-13"} />
             <EnterUserInfoItem className={"inputOneDetail"} placeHolder={"Intro Line 1"} />
             <EnterUserInfoItem className={"inputDetails"} placeHolder={"Detailed Intro"}/>
-            <div className='buttonUserInfo elsie-swash-caps-black' onClick={() => {navigate('/main')}}>Enter GoGo</div>
+            <div className='buttonUserInfo elsie-swash-caps-black' onClick={isAllInputsAreNotEmpty ? () => {navigate('/main')} : null}>Enter GoGo</div>
         </div>
     );
 };
